@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-color: lightblue;
+}
+#answerContainer {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    box-shadow: 0px 0px 8px 3px rgb(71, 156, 185);
+    background-color: rgb(230, 227, 227);
+    text-align: center;
+    font-size: 50px;
+    grid-template-rows: 60px 0px 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: none;
+    font-family: 'Rubik', sans-serif;
+}
+#questionContainer {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(230, 227, 227);
+    box-shadow: 0px 0px 8px 3px rgb(71, 156, 185);
+    text-align: center;
+    font-size: 40px;
+    line-height: 90px;
+    grid-template-columns: 1fr;
+}
+input {
+    width: 30%;
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+}
+button {
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(144, 238, 144);
+    border: none;
+    border-bottom: 3px solid green;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+button:hover {
+    border: 3px solid white;
+}
+#restart {
+    height: 60%;
+    font-size: 40px;
+}
+#start {
+    height: 120%;
+    font-size: 40px;
+}
+#start { cursor: pointer; }
+#restart { cursor: pointer; }
+#check { cursor: pointer; }
+#startScreen {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#time {
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Rubik:300', sans-serif;
+    padding-left: 50px;
+}
+label {
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 50px;
+}
+#questions {
+    width: 70px;
+    height: 70px;
+}
+.questions {
+    border: none;
+    width: 40%;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+.inputs {
+    border: none;
+    border-bottom: 5px solid blue;
+    width: 30%;
+    font-size: 40px;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    background: rgba(203, 185, 244, 0.455);
+    border-radius: 5px;
+}
+.answers {
+    font-size: 40px;
+    font-family: 'DM Sans', sans-serif;
+    opacity: 50%;
+    padding-top: 70px;
+    line-height: 0px;
+}
+#check {
+    width: 30%;
+    font-size: 40px;
+    margin-top: 0px;
+}
+#name {
+    font-family: 'Rubik', sans-serif;
+}
+#clock {
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Rubik:300', sans-serif;
+    padding-left: 50px;
+}
+#timer {
+    text-align: left;
+    padding-left: 50px;
+    position: sticky;
+    top: 0px;
+    font-family: 'Rubik:300', sans-serif;
+}
+#questionTypes {
+    width: 350px;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+}
+option {
+    font-size: 20px;
+}
+span {
+    height: 50px;
+}

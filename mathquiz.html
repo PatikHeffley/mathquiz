@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" type="text/css" href="mathquiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="answerContainer" style="display: none;">
+        <p id="clock"></p>
+        <p id="time"></p>
+        <h1>Quiz Complete!</h1>
+        <p id="percentage"></p>
+        <p id="amountcorrect"></p>
+        <p id="testdata"></p>
+        <button id="restart" onclick="reset()">Restart?</button>
+    </div>
+    <div id="startScreen">
+    <label>Name:</label>
+    <input type="text" id="name">
+    <br>
+    <label>Number of Questions:</label>
+    <input id="questions">
+    <br>
+    <label>Type of question:</label>
+    <select name="types of questions" id="questionTypes">
+        <option value="addition">Addition</option>
+        <option value="subtraction">Subtraction</option>
+        <option value="multiplication">Multiplication</option>
+        <option value="division">Division</option>
+    </select>
+    <span></span>
+    <button id="start">Begin</button>
+    </div>
+    <div id="questionContainer" style="display: none;">
+    </div>
+    <br>
+    <br>
+    <script src="mathquiz.js"></script>
+</body>
+</html>
